@@ -18,7 +18,36 @@
       <div id="components-demo">
         <button-counter></button-counter>
       </div>
+      <div>
+        <p>
+            Components are reusable Vue instances with a name:
+            in this case, button-counter. We can use this
+            component as a custom element inside a root Vue 
+            instance created with new Vue
+        </p>
+        <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <pre>
+                      <code>
+                          // Define a new component called button-counter <br>
+                          Vue.component('button-counter',{ <br>
+                            data: function(){ <br>
+                              return {  <br>
+                                count: 0 <br>
+                              } <br>
+                            },   <br>
+                            template: button v-on:click="count++" class="button is-info is-large" >You clicked me  {{ count }} times. /button <br>
+                          }) <br>
+                      </code>
+                  </pre>
+                </div>
+              </div>
+            </article>
+          </div>
 
+      </div>
     </div>
   </section>
 
